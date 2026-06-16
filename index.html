@@ -8,6 +8,65 @@
 <meta property="og:title" content="Paul the Plumber — Honest, Owner-Operated Plumbing | Brighton, CO">
 <meta property="og:description" content="When you call Paul, you get Paul. Licensed &amp; insured plumbing for Brighton and the north Denver metro. Call or text (720) 422-8316.">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Paul the Plumber">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paul the Plumber — Honest, Owner-Operated Plumbing | Brighton, CO">
+<meta name="twitter:description" content="When you call Paul, you get Paul. Licensed &amp; insured plumbing across the north Denver metro. Free estimates. Call or text (720) 422-8316.">
+<meta name="theme-color" content="#0a0d12">
+<meta name="geo.region" content="US-CO">
+<meta name="geo.placename" content="Brighton, Colorado">
+<meta name="geo.position" content="39.985;-104.820">
+<meta name="ICBM" content="39.985, -104.820">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://paultheplumber.co/">
+
+<!-- LocalBusiness structured data — helps Paul rank in Google local/Maps results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Paul the Plumber",
+  "description": "Licensed, insured, owner-operated residential plumbing serving Brighton and the north Denver metro. Drain cleaning, water heaters, leak repair, fixtures, and sewer lines.",
+  "telephone": "+1-720-422-8316",
+  "url": "https://paultheplumber.co/",
+  "areaServed": ["Brighton CO","Thornton CO","Commerce City CO","Northglenn CO","Westminster CO","Henderson CO","Fort Lupton CO","Lochbuie CO","Denver metro"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Brighton",
+    "addressRegion": "CO",
+    "postalCode": "80601",
+    "addressCountry": "US"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.985, "longitude": -104.820 },
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "description": "By appointment" }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Cleaning" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heater Repair & Replacement" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leak Detection & Repair" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fixture, Faucet & Toilet Installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer & Water Line Repair" } }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "37" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Does Paul charge for estimates?", "acceptedAnswer": { "@type": "Answer", "text": "Estimates are free for standard scheduled work. You get an upfront, honest price before any work begins — the estimate you approve is the price you pay." } },
+    { "@type": "Question", "name": "What areas does Paul serve?", "acceptedAnswer": { "@type": "Answer", "text": "Paul is based in Brighton, CO and serves the north Denver metro including Thornton, Commerce City, Northglenn, Westminster, Henderson, Fort Lupton, and Lochbuie. For the right job he travels across the Denver metro." } },
+    { "@type": "Question", "name": "Is Paul licensed and insured?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paul is a licensed, insured, owner-operated plumber registered with the Colorado Division of Professions and Occupations." } },
+    { "@type": "Question", "name": "Do you handle plumbing emergencies?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. For burst pipes, sewage backups, or water heater flooding, call (720) 422-8316 anytime. Paul answers his own phone, walks you through shutting off the water, and gets to you as fast as possible." } },
+    { "@type": "Question", "name": "Will I talk to Paul or a call center?", "acceptedAnswer": { "@type": "Answer", "text": "You always reach Paul directly. The person who answers your call or text is the same licensed plumber who shows up at your door." } }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -221,6 +280,51 @@ section{padding:4.5rem 0}
 .marquee-track span::after{content:"◆";color:var(--copper);font-size:.6rem}
 @keyframes scroll{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+
+/* ============ OFFER RIBBON ============ */
+.offer-ribbon{
+  display:inline-flex;align-items:center;gap:.7rem;flex-wrap:wrap;
+  background:rgba(255,148,66,.1);border:1px solid rgba(255,148,66,.34);
+  border-radius:99px;padding:.5rem 1.1rem;margin-bottom:1.6rem;
+  font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem;
+}
+.offer-ribbon b{color:var(--copper)}
+.offer-ribbon .sep{width:5px;height:5px;border-radius:50%;background:var(--txt-dim);flex:none}
+
+/* ============ TRUST STRIP ============ */
+.trust-strip{border-block:1px solid var(--line);background:#0b0f16}
+.trust-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;padding:2.4rem 0}
+@media(min-width:768px){.trust-grid{grid-template-columns:repeat(4,1fr);padding:2.8rem 0}}
+.trust-item{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.6rem}
+.trust-item .t-ic{
+  width:46px;height:46px;border-radius:11px;display:grid;place-items:center;
+  background:rgba(46,134,255,.12);border:1px solid rgba(46,134,255,.32);color:#8db6ff;
+}
+.trust-item .t-ic svg{width:24px;height:24px}
+.trust-item b{font-family:var(--display);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:1.02rem;line-height:1.15}
+.trust-item span{font-size:.82rem;color:var(--txt-dim)}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:820px;margin:3rem auto 0;display:grid;gap:.9rem}
+.faq{
+  background:var(--ink-2);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  transition:border-color .25s;
+}
+.faq[open]{border-color:rgba(255,148,66,.4)}
+.faq summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  padding:1.2rem 1.4rem;font-family:var(--display);font-weight:700;text-transform:uppercase;
+  letter-spacing:.02em;font-size:1.08rem;color:var(--txt);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .q-plus{
+  flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(255,148,66,.12);border:1px solid rgba(255,148,66,.4);color:var(--copper);
+  font-size:1.3rem;line-height:1;transition:transform .25s;
+}
+.faq[open] summary .q-plus{transform:rotate(45deg)}
+.faq-body{padding:0 1.4rem 1.3rem;color:var(--txt-dim);font-size:.98rem}
+.faq-body a{color:var(--copper)}
 
 /* ============ HOW IT WORKS ============ */
 .steps{display:grid;gap:1.4rem;margin-top:3rem}
@@ -481,6 +585,7 @@ body.has-sticky{padding-bottom:0}
       <a href="#request">Request Service</a>
       <a href="#emergency">Emergencies</a>
       <a href="#area">Service Area</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn-copper nav-cta nav-text-btn" href="tel:+17204228316">
@@ -498,6 +603,7 @@ body.has-sticky{padding-bottom:0}
   <a href="#request">Request Service</a>
   <a href="#emergency">Emergencies</a>
   <a href="#area">Service Area</a>
+  <a href="#faq">FAQ</a>
   <a href="#contact">Contact</a>
   <a class="btn btn-copper" href="tel:+17204228316">Call (720) 422-8316</a>
 </div>
@@ -508,6 +614,7 @@ body.has-sticky{padding-bottom:0}
 <section class="hero" id="hero">
   <div class="wrap hero-inner">
     <span class="hero-badge"><span class="dot"></span> Licensed &amp; Insured · Owner-Operated · Brighton, CO</span>
+    <div class="offer-ribbon"><b>$50 Off</b> Your First Service <span class="sep"></span> Free Estimates <span class="sep"></span> Same-Day Service Often Available</div>
     <h1>When You Call <span class="blue">Paul</span>, You Get Paul<span class="copper">.</span></h1>
     <p class="hero-sub">
       No call centers, no commissioned upsells, no mystery techs. One <strong>licensed,
@@ -538,6 +645,28 @@ body.has-sticky{padding-bottom:0}
     <span>Drain Cleaning</span><span>Water Heaters</span><span>Leak Repair</span><span>Fixtures &amp; Faucets</span><span>Toilets</span><span>Sewer Lines</span><span>Garbage Disposals</span><span>Sump Pumps</span><span>Remodels</span>
   </div>
 </div>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust-strip" style="padding:0">
+  <div class="wrap trust-grid">
+    <div class="trust-item reveal">
+      <span class="t-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+      <b>Licensed &amp; Insured</b><span>Colorado registered</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="t-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></span>
+      <b>5.0★ Rated</b><span>By local neighbors</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="t-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+      <b>Upfront Pricing</b><span>The quote is the bill</span>
+    </div>
+    <div class="trust-item reveal">
+      <span class="t-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5z"/></svg></span>
+      <b>Work Guaranteed</b><span>Done right, to code</span>
+    </div>
+  </div>
+</section>
 
 <!-- ============ HOW IT WORKS ============ -->
 <section id="how">
@@ -781,6 +910,43 @@ body.has-sticky{padding-bottom:0}
   </div>
 </section>
 
+<!-- ============ FAQ ============ -->
+<section id="faq" class="metal" style="border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="kicker reveal" style="justify-content:center">Straight Answers</span>
+      <h2 class="section-title reveal">Frequently Asked Questions</h2>
+      <p class="section-sub reveal" style="margin-inline:auto">The stuff people want to know before they pick up the phone.</p>
+    </div>
+    <div class="faq-list">
+      <details class="faq reveal">
+        <summary>Does Paul charge for estimates? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Estimates are <strong style="color:var(--txt)">free</strong> for standard scheduled work. You get an honest, upfront price before anything gets turned — and the estimate you approve is the price you pay. No surprise line items.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>What areas do you serve? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Paul is based in Brighton and serves the north Denver metro — Thornton, Commerce City, Northglenn, Westminster, Henderson, Fort Lupton, and Lochbuie. A little outside that? <a href="tel:+17204228316">Call anyway</a> — for the right job he travels across the metro.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Are you licensed and insured? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Yes — Paul is a licensed, insured, owner-operated plumber registered with the Colorado Division of Professions and Occupations, with the paperwork to prove it.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Do you handle plumbing emergencies? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Absolutely. Burst pipe, sewage backup, water heater flooding the basement — call <a href="tel:+17204228316">(720) 422-8316</a> anytime. Paul answers his own phone, walks you through shutting off the water, and gets to you as fast as humanly possible.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>Will I talk to Paul or a call center? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Always Paul. The person reading your text and answering your call is the same licensed plumber who shows up at your door with the tools. No dispatchers, no commissioned mystery techs.</div>
+      </details>
+      <details class="faq reveal">
+        <summary>How do I claim the $50 off my first service? <span class="q-plus" aria-hidden="true">+</span></summary>
+        <div class="faq-body">Just mention this website when you call or text, or note it in the <a href="#request">service request form</a>. The discount applies to your first standard service visit.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
 <!-- ============ CTA BAND ============ -->
 <section class="cta-band">
   <div class="wrap">
@@ -891,7 +1057,7 @@ const SHOP_SMS = '+17204228316';
 document.getElementById('serviceForm').addEventListener('submit', e => {
   e.preventDefault();
   const f = e.target;
-  const body = 'Service request — Name: ' + f.name.value +
+  const body = 'Service request (website — $50 off first service) — Name: ' + f.name.value +
     ' | Phone: ' + f.phone.value +
     ' | City: ' + f.city.value +
     ' | Issue: ' + f.type.value +
